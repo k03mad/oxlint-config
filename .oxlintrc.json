@@ -104,22 +104,25 @@
 
     // OFF
 
-    "oxc/no-rest-spread-properties": "off",
     "oxc/no-optional-chaining": "off",
+    "oxc/no-rest-spread-properties": "off",
 
     "import/no-anonymous-default-export": "off",
     "import/no-default-export": "off",
+    "import/no-named-export": "off",
+
+    "jsdoc/require-param-description": "off",
 
     "unicorn/no-array-reduce": "off",
     "unicorn/no-null": "off",
 
-    "max-lines": "off",
-    "no-plusplus": "off",
-    "max-lines-per-function": "off",
-    "max-params": "off",
-    "sort-keys": "off",
-    "no-magic-numbers": "off",
     "id-length": "off",
-    "no-ternary": "off"
+    "max-lines-per-function": "off",
+    "max-lines": "off",
+    "max-params": "off",
+    "no-magic-numbers": "off",
+    "no-plusplus": "off",
+    "no-ternary": "off",
+    "sort-keys": "off"
   }
 }
