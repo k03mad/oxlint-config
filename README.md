@@ -12,8 +12,9 @@ npm i --save-dev --save-exact oxlint oxfmt @k03mad/oxlint-config
 export {default} from '@k03mad/eslint-config';
 ```
 
+`.oxfmtrc.json`
+
 ```json
-// .oxfmtrc.json
 {
     "$schema": "./node_modules/oxfmt/configuration_schema.json",
     "ignorePatterns": ["node_modules/**"],
@@ -34,8 +35,22 @@ export {default} from '@k03mad/eslint-config';
 }
 ```
 
+`.vscode/settings.json`
+
 ```json
-// package.json
+{
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "oxc.fmt.configPath": ".oxfmtrc.json",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.oxc": "always"
+    }
+}
+```
+
+`package.json`
+
+```json
 {
     "scripts": {
         "lint": "oxlint --report-unused-disable-directives && oxfmt --check"
