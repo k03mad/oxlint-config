@@ -113,6 +113,7 @@
     "import/no-named-as-default": "off",
     "import/no-named-export": "off",
     "import/no-nodejs-modules": "off",
+    "import/no-relative-parent-imports": "off",
     "import/prefer-default-export": "off",
 
     "jsdoc/require-param-description": "off",
@@ -140,6 +141,7 @@
     "max-lines": "off",
     "max-params": "off",
     "max-statements": "off",
+    "no-console": "off",
     "no-magic-numbers": "off",
     "no-plusplus": "off",
     "no-ternary": "off",
