@@ -110,16 +110,22 @@
     "import/no-anonymous-default-export": "off",
     "import/no-default-export": "off",
     "import/no-named-export": "off",
+    "import/prefer-default-export": "off",
 
     "jsdoc/require-param-description": "off",
+    "jsdoc/require-returns-description": "off",
 
     "unicorn/no-array-reduce": "off",
     "unicorn/no-null": "off",
 
+    "array-callback-return": "off",
+    "complexity": "off",
     "id-length": "off",
+    "init-declarations": "off",
     "max-lines-per-function": "off",
     "max-lines": "off",
     "max-params": "off",
+    "max-statements": "off",
     "no-magic-numbers": "off",
     "no-plusplus": "off",
     "no-ternary": "off",
