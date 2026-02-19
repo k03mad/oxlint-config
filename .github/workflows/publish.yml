@@ -1,0 +1,35 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: EndBug/version-check@v2
+        id: check_pkg_version
+        with:
+          diff-search: true
+
+      - if: steps.check_pkg_version.outputs.changed == 'true'
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: '.nvmrc'
+          registry-url: 'https://registry.npmjs.org'
+
+      - if: steps.check_pkg_version.outputs.changed == 'true'
+        run: npm i
+
+      - if: steps.check_pkg_version.outputs.changed == 'true'
+        run: npm publish

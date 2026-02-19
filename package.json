@@ -1,0 +1,24 @@
+{
+  "name": "@k03mad/oxlint-config",
+  "version": "0.0.1",
+  "description": "My Oxlint config",
+  "license": "MIT",
+  "maintainers": [
+    "Kirill Molchanov <k03.mad@gmail.com>"
+  ],
+  "repository": {
+    "url": "git+https://github.com/k03mad/oxlint-config.git"
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "oxlint --report-unused-disable-directives && oxfmt --check",
+    "prepare": "husky || true"
+  },
+  "devDependencies": {
+    "oxfmt": "0.34.0",
+    "oxlint": "1.49.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

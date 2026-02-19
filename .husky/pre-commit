@@ -1,0 +1,1 @@
+./node_modules/.bin/run-p -c lint test
