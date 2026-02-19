@@ -6,10 +6,13 @@ npm i --save-dev --save-exact oxlint oxfmt @k03mad/oxlint-config
 
 ## Use
 
-```js
-// eslint.config.js
+`.oxlintrc.json`
 
-export {default} from '@k03mad/eslint-config';
+```json
+{
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
+    "extends": ["./node_modules/@k03mad/oxlint-config/.oxlintrc.json"]
+}
 ```
 
 `.oxfmtrc.json`
