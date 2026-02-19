@@ -1,8 +1,15 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "ignorePatterns": ["node_modules/**"],
+
+  "env": {
+    "browser": true,
+    "node": true
+  },
+
   "plugins": ["typescript", "eslint", "import", "jsdoc", "node", "oxc", "promise", "unicorn"],
   "jsPlugins": ["./plugin/plugin.js"],
+
   "categories": {
     "correctness": "error",
     "suspicious": "error",
@@ -12,6 +19,7 @@
     "restriction": "error",
     "nursery": "error"
   },
+
   "rules": {
     "import/extensions": [
       "error",
@@ -105,12 +113,14 @@
     // OFF
 
     "oxc/no-optional-chaining": "off",
+    "oxc/no-async-await": "off",
     "oxc/no-rest-spread-properties": "off",
 
     "import/no-anonymous-default-export": "off",
     "import/no-default-export": "off",
     "import/no-named-export": "off",
     "import/prefer-default-export": "off",
+    "import/group-exports": "off",
 
     "jsdoc/require-param-description": "off",
     "jsdoc/require-returns-description": "off",
@@ -118,6 +128,8 @@
     "unicorn/no-array-reduce": "off",
     "unicorn/no-null": "off",
 
+    "capitalized-comments": "off",
+    "sort-imports": "off",
     "array-callback-return": "off",
     "complexity": "off",
     "id-length": "off",
