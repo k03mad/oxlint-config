@@ -112,6 +112,7 @@
     "import/no-default-export": "off",
     "import/no-named-as-default": "off",
     "import/no-named-export": "off",
+    "import/no-namespace": "off",
     "import/no-nodejs-modules": "off",
     "import/no-relative-parent-imports": "off",
     "import/prefer-default-export": "off",
@@ -127,6 +128,7 @@
     "oxc/no-optional-chaining": "off",
     "oxc/no-rest-spread-properties": "off",
 
+    "unicorn/no-anonymous-default-export": "off",
     "unicorn/no-array-for-each": "off",
     "unicorn/no-array-reduce": "off",
     "unicorn/no-null": "off",
