@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/oxlint-config",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "My Oxlint config",
   "license": "MIT",
   "maintainers": [
@@ -15,6 +15,7 @@
     "prepare": "husky || true"
   },
   "devDependencies": {
+    "husky": "9.1.7",
     "oxfmt": "0.34.0",
     "oxlint": "1.49.0"
   },
