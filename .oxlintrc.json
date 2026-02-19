@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "ignorePatterns": [".allure/**", ".bin/**", "allure/**", "artifacts/**", "node_modules/**"],
+  "ignorePatterns": ["node_modules/**"],
   "plugins": ["typescript", "eslint", "import", "jsdoc", "node", "oxc", "promise", "unicorn"],
   "jsPlugins": ["./plugin/plugin.js"],
   "categories": {
