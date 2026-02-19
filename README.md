@@ -11,7 +11,10 @@ npm i --save-dev --save-exact oxlint oxfmt @k03mad/oxlint-config
 ```json
 {
     "$schema": "./node_modules/oxlint/configuration_schema.json",
-    "extends": ["./node_modules/@k03mad/oxlint-config/.oxlintrc.json"]
+    "extends": ["./node_modules/@k03mad/oxlint-config/.oxlintrc.json"],
+    "env": {
+        "node": true
+    }
 }
 ```
 
