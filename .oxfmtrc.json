@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": [".allure/**", ".bin/**", "allure/**", "artifacts/**", "node_modules/**"],
+  "ignorePatterns": ["node_modules/**"],
   "singleQuote": true,
   "arrowParens": "avoid",
   "bracketSpacing": false,

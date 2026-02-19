@@ -1,7 +1,7 @@
 # Install
 
 ```bash
-npm i --save-dev --save-exact eslint @k03mad/eslint-config
+npm i --save-dev --save-exact oxlint oxfmt @k03mad/oxlint-config
 ```
 
 ## Use
@@ -13,16 +13,32 @@ export {default} from '@k03mad/eslint-config';
 ```
 
 ```json
-// package.json
+// .oxfmtrc.json
 {
-    "scripts": {
-        "lint": "npm run lint:eslint",
-        "lint:eslint": "eslint ./ --cache"
+    "$schema": "./node_modules/oxfmt/configuration_schema.json",
+    "ignorePatterns": ["node_modules/**"],
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "bracketSpacing": false,
+    "quoteProps": "consistent",
+    "experimentalSortImports": {
+        "groups": [
+            ["builtin"],
+            ["external", "type-external"],
+            ["internal", "type-internal"],
+            ["parent", "type-parent"],
+            ["sibling", "type-sibling"],
+            ["index", "type-index"]
+        ]
     }
 }
 ```
 
 ```json
-// gitignore
-.eslintcache
+// package.json
+{
+    "scripts": {
+        "lint": "oxlint --report-unused-disable-directives && oxfmt --check"
+    }
+}
 ```
