@@ -145,6 +145,7 @@
     "max-lines": "off",
     "max-params": "off",
     "max-statements": "off",
+    "no-await-in-loop": "off",
     "no-console": "off",
     "no-magic-numbers": "off",
     "no-plusplus": "off",
