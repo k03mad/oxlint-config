@@ -128,6 +128,8 @@
     "oxc/no-optional-chaining": "off",
     "oxc/no-rest-spread-properties": "off",
 
+    "promise/avoid-new": "off",
+
     "unicorn/filename-case": "off",
     "unicorn/no-anonymous-default-export": "off",
     "unicorn/no-array-for-each": "off",
@@ -142,6 +144,7 @@
     "id-length": "off",
     "init-declarations": "off",
     "max-lines-per-function": "off",
+    "no-promise-executor-return": "off",
     "max-lines": "off",
     "max-params": "off",
     "max-statements": "off",
