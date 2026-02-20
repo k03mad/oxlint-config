@@ -147,6 +147,7 @@
     "init-declarations": "off",
     "max-lines-per-function": "off",
     "no-promise-executor-return": "off",
+    "no-undefined": "off",
     "max-lines": "off",
     "max-params": "off",
     "max-statements": "off",
