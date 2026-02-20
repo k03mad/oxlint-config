@@ -107,6 +107,7 @@
 
     // OFF
 
+    "import/exports-last": "off",
     "import/group-exports": "off",
     "import/no-anonymous-default-export": "off",
     "import/no-default-export": "off",
@@ -118,6 +119,7 @@
     "import/prefer-default-export": "off",
 
     "jsdoc/require-param-description": "off",
+    "jsdoc/require-property-description": "off",
     "jsdoc/require-returns-description": "off",
     "jsdoc/require-returns": "off",
 
