@@ -138,9 +138,11 @@
     "unicorn/no-array-for-each": "off",
     "unicorn/no-array-reduce": "off",
     "unicorn/no-null": "off",
+    "unicorn/no-process-exit": "off",
     "unicorn/require-array-join-separator": "off",
 
     "capitalized-comments": "off",
+    "class-methods-use-this": "off",
     "sort-imports": "off",
     "array-callback-return": "off",
     "complexity": "off",
