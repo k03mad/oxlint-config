@@ -117,6 +117,7 @@
     "import/no-nodejs-modules": "off",
     "import/no-relative-parent-imports": "off",
     "import/prefer-default-export": "off",
+    "import/unambiguous": "off",
 
     "jsdoc/require-param-description": "off",
     "jsdoc/require-property-description": "off",
@@ -146,8 +147,10 @@
     "id-length": "off",
     "init-declarations": "off",
     "max-lines-per-function": "off",
+    "no-continue": "off",
     "no-promise-executor-return": "off",
     "no-undefined": "off",
+    "max-depth": "off",
     "max-lines": "off",
     "max-params": "off",
     "max-statements": "off",
