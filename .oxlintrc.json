@@ -75,6 +75,16 @@
       },
       {
         "blankLine": "always",
+        "next": "multiline-let",
+        "prev": "*"
+      },
+      {
+        "blankLine": "always",
+        "next": "*",
+        "prev": "multiline-let"
+      },
+      {
+        "blankLine": "always",
         "next": "multiline-expression",
         "prev": "*"
       },
@@ -85,13 +95,33 @@
       },
       {
         "blankLine": "always",
-        "next": "multiline-let",
+        "next": "class",
         "prev": "*"
       },
       {
         "blankLine": "always",
         "next": "*",
-        "prev": "multiline-let"
+        "prev": "class"
+      },
+      {
+        "blankLine": "always",
+        "next": "multiline-return",
+        "prev": "*"
+      },
+      {
+        "blankLine": "always",
+        "next": "*",
+        "prev": "multiline-return"
+      },
+      {
+        "blankLine": "always",
+        "next": "multiline-export",
+        "prev": "*"
+      },
+      {
+        "blankLine": "always",
+        "next": "*",
+        "prev": "multiline-export"
       },
       {
         "blankLine": "always",

@@ -5,6 +5,7 @@ const isClosingBraceToken = token => token.value === '}' && token.type === 'Punc
 const isParenthesized = (node, sourceCode) => {
     const previousToken = sourceCode.getTokenBefore(node);
     const nextToken = sourceCode.getTokenAfter(node);
+
     return (
         Boolean(previousToken && nextToken) &&
         previousToken.value === '(' &&
@@ -80,6 +81,7 @@ const isObjectNotArray = obj => typeof obj === 'object' && obj !== null && !Arra
 
 const deepMerge = (first = {}, second = {}) => {
     const keys = new Set([...Object.keys(first), ...Object.keys(second)]);
+
     return [...keys].reduce((acc, key) => {
         const firstHasKey = key in first;
         const secondHasKey = key in second;
@@ -105,6 +107,7 @@ const createRule = ({name, create, meta}) => ({
     create: context => {
         const {defaultOptions = []} = meta;
         const optionsCount = Math.max(context.options.length, defaultOptions.length);
+
         return create(
             context,
             Array.from({length: optionsCount}, (_, i) =>
@@ -208,6 +211,7 @@ const getActualLastToken = (node, sourceCode) => {
     const semiToken = sourceCode.getLastToken(node);
     const prevToken = sourceCode.getTokenBefore(semiToken);
     const nextToken = sourceCode.getTokenAfter(semiToken);
+
     return prevToken &&
         nextToken &&
         prevToken.range[0] >= node.range[0] &&
