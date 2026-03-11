@@ -15,6 +15,10 @@
     "nursery": "error"
   },
 
+  "options": {
+    "reportUnusedDisableDirectives": "error"
+  },
+
   "rules": {
     "import/extensions": [
       "error",

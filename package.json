@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/oxlint-config",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "My Oxlint config",
   "license": "MIT",
   "maintainers": [
@@ -11,7 +11,7 @@
   },
   "type": "module",
   "scripts": {
-    "lint": "oxlint --report-unused-disable-directives && oxfmt --check",
+    "lint": "oxlint && oxfmt --check",
     "prepare": "husky || true"
   },
   "devDependencies": {
