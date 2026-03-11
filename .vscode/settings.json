@@ -1,5 +1,4 @@
 {
-  "cSpell.words": ["nvmrc", "oxfmt", "oxfmtrc", "oxlint", "oxlintrc"],
   "oxc.fmt.configPath": ".oxfmtrc.json",
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "oxc.oxc-vscode",
