@@ -40,6 +40,12 @@
         "allowEmptyCatch": true
       }
     ],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all"
+      }
+    ],
     "prefer-destructuring": [
       "error",
       {
