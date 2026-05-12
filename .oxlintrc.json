@@ -203,6 +203,7 @@
     "no-plusplus": "off",
     "no-ternary": "off",
     "no-underscore-dangle": "off",
+    "require-unicode-regexp": "off",
     "sort-keys": "off"
   }
 }
