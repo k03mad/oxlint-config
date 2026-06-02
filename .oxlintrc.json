@@ -5,6 +5,10 @@
   "plugins": ["typescript", "eslint", "import", "jsdoc", "node", "oxc", "promise", "unicorn"],
   "jsPlugins": ["./plugin/plugin.js"],
 
+  "env": {
+    "node": true
+  },
+
   "categories": {
     "correctness": "error",
     "suspicious": "error",
