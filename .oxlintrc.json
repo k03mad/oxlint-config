@@ -179,6 +179,7 @@
     "promise/avoid-new": "off",
 
     "unicorn/filename-case": "off",
+    "unicorn/max-nested-calls": "off",
     "unicorn/no-anonymous-default-export": "off",
     "unicorn/no-array-for-each": "off",
     "unicorn/no-array-reduce": "off",
