@@ -170,6 +170,7 @@
     "jsdoc/require-returns": "off",
 
     "node/no-process-env": "off",
+    "node/no-top-level-await": "off",
 
     "oxc/no-async-await": "off",
     "oxc/no-async-endpoint-handlers": "off",
