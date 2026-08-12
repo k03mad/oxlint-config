@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/oxlint-config",
-  "version": "0.12.3",
+  "version": "0.12.4",
   "description": "My Oxlint config",
   "license": "MIT",
   "maintainers": [
@@ -9,6 +9,12 @@
   "repository": {
     "url": "git+https://github.com/k03mad/oxlint-config.git"
   },
+  "files": [
+    ".oxlintrc.json",
+    "plugin",
+    "README.md",
+    "LICENSE"
+  ],
   "type": "module",
   "scripts": {
     "lint": "oxlint && oxfmt --check",
